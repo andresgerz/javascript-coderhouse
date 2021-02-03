@@ -8,6 +8,16 @@ allData.push({
   'time': '10:00 hs'
 })
 
+
+const handleDelete = (e) => {
+
+  if (e > -1 ) {
+    allData.splice(e, 1);
+  }
+
+  showTasks();
+}
+
 const showTasks = () => {
   let tasksList = document.querySelector('.tasks-list');
   
@@ -16,6 +26,7 @@ const showTasks = () => {
       <h3>${item.task}</h3>
       <p><strong>Priority:</strong> ${item.priority}</p>
       <p><strong>Date:</strong> ${item.date} | <strong>Time:</strong> ${item.time}</p>
+      <input type="button" onclick="handleDelete(${index});" value="Delete"/>
     </div>`
   );
   
