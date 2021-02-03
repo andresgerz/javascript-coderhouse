@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desafio7</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./script.js" async></script>
+</head>
+<body>
+  <div class="form-wrapper">
+    <h1>Tasks</h1>
+    <form action="" method="GET" id="form-task">
+      <div class="item">
+        <label for="input_task_id">Task</label>
+        <input type="text" name="input_task" id="input_task_id">
+      </div>
+      <div class="item">
+        <label for="select_priority_id">Priority</label>
+        <select name="select_priority" id="select_priority_id">
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <div class="item">
+        <label for="input_date_id">Date</label>
+        <input type="date" name="input_date" id="input_date_id">
+      </div>
+      <div class="item">
+        <label for="input_time_id">Hour</label>
+        <input type="time" name="input_time" id="input_time_id">
+      </div>
+      <div class="item">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Send">
+      </div>
+    </form>
+    <div class="tasks-list"></div>
+  </div>
+</body>
+</html>
